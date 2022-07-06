@@ -1,4 +1,5 @@
 {{ config(
+    alias = 'ORDERS_1',
     schema= 'STAGE',
     database='DBT_SAMPLE'
   ) }}
