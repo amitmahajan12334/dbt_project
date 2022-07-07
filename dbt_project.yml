@@ -36,3 +36,10 @@ models:
     # Applies to all files under models/example/
     stage:
       materialized: table
+      database: DBT_SAMPLE
+    publish:
+      materialized: table
+      database: DBT_SAMPLE
+    raw:
+      materialized: view
+      database: DBT_SAMPLE

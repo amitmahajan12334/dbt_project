@@ -1,7 +1,7 @@
 -- config is for writing into the target
 {{ config(
-    schema= 'STAGE',
+    schema= 'RAW',
     database='DBT_SAMPLE'
   ) }}
 
-select * from {{ source('RAW', 'V_ORDERS') }}
+select * from {{ source('RAW', 'ORDERS') }}

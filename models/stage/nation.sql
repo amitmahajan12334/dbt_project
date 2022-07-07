@@ -3,4 +3,4 @@
     database='DBT_SAMPLE'
   ) }}
 
-select * from {{ source('RAW', 'V_CUSTOMER') }}
+select * from {{ source('RAW', 'V_NATION') }}
