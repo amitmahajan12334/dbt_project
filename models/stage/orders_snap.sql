@@ -1,5 +1,3 @@
-{% snapshot orders_snapshot %}
-
 {{
     config(
       target_database='DBT_SAMPLE',
@@ -11,5 +9,3 @@
 }}
 
 select * from {{ source('RAW', 'ORDERS') }}
-
-{% endsnapshot %}
